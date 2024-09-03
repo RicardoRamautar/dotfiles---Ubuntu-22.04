@@ -1,0 +1,3 @@
+[submodule "rofi/rofi-themes-collection"]
+	path = rofi/rofi-themes-collection
+	url = https://github.com/lr-tech/rofi-themes-collection.git
