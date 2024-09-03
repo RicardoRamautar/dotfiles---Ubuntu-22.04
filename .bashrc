@@ -175,7 +175,8 @@ fi
 #     fi
 # }
 
-source ~/bash_prompt.sh
+# source ~/bash_prompt.sh
+source ~/dotfiles/bash_prompts/simple.sh
 
 
 unset color_prompt force_color_prompt
