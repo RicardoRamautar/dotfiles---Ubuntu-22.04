@@ -39,7 +39,7 @@ PS1=""
 
 # First line
 PS1+="${bright_blue}${lower_bend}─${reset}"
-PS1+="${bright_blue}${reset}${bright_blue_bg}${dark_grey}${ubuntu} ${reset}"                        
+PS1+="${bright_blue}${reset}${bright_blue_bg}${dark_grey}${folder3} ${reset}"                        
 PS1+="${bright_blue}${dark_grey_bg}${reset}"           
 PS1+="${dark_grey_bg}${red}${italic} \w${reset}"                   
 PS1+="${dark_grey}${reset}"        

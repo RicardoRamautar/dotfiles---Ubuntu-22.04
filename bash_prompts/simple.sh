@@ -45,7 +45,7 @@ parse_git_bg() {
 PS1=""
 
 # Add to right side
-# PS1+=$(printf "%*s\r%s" "$(tput cols)" "${light_yellow} $(date +%H:%M)${reset}" '')
+# PS1+=$(printf "${light_yellow}%*s\r%s${reset}" "$(tput cols)" " $(date +%H:%M)" '')
 
 # First line
 PS1+="${bright_blue}${lower_bend}─${reset}"

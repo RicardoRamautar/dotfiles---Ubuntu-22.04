@@ -148,3 +148,7 @@ source ~/Downloads/ble.sh/out/ble.sh
 
 # Set UTF-8 settings to US
 export LC_NUMERIC=en_US.UTF-8
+
+# Alias for bash
+alias b="nvim ~/dotfiles/.bashrc"
+alias sb="source ~/dotfiles/.bashrc"
