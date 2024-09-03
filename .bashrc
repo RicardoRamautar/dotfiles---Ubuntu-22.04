@@ -1,37 +1,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# # Colors
-# blue="\[\e[30;48;5;153m\]"              # Foreground: #000000, Background: #D1E9F6
-# yellow="\[\e[30;48;5;230m\]"            # Foreground: #000000, Background: #F6EACB
-# pink="\[\e[30;48;5;224m\]"              # Foreground: #000000, Background: #F1D3CE
-# dark_blue_bg="\[\e[30;48;5;23m\]"       # Foreground: #000000, Background: #1E3A5F
-# darkgrey="\[\e[38;5;59m\]"              # Foreground: #343131
-# dark_gray_bg="\[\e[38;5;15;48;5;59m\]"  # Foreground: #FFFFFF, Background: #343131
-# white_fg="\[\e[38;5;15m\]"              # Foreground: #FFFFFF
-# orange_bg="\[\e[30;48;5;202m\]"         # Foreground: #000000, Background: #E85C0D
-# blue_fg="\[\e[38;5;153m\]"              # Foreground: #D1E9F6
-# blue_bg="\[\e[48;5;153m\]"              # Foreground: #D1E9F6
-# neon_green="\[\e[38;2;46;204;113m\]"    # Foreground: #2ECC71
-# bright_blue="\[\e[38;2;52;152;219m\]"   # Foreground: #3498DB
-# bright_blue_bg="\[\e[48;2;52;152;219m\]" # Foreground: #000000, Background: #3498DB
-
-# reset="\[\e[0m\]"                       # Reset to default colors
-
-# bold="\[\e[1m\]"
-
-# folder=
-# ubuntu=
-# triangle=$'\uE0B0'
-
-# lower_bend=$'\u256d'
-# upper_bend=$'\u2570'
-
-
-
-
-# ubuntu_logo="${darkgrey}${reset}${dark_gray_bg}${white_fg}${ubuntu} ${reset}"
-
 # If not running interactively, don't do anything
 case $- in 
     *i*) ;;
@@ -85,95 +54,6 @@ if [ -n "$force_color_prompt" ]; then
 	color_prompt=
     fi
 fi
-
-
-
-# if [ "$color_prompt" = yes ]; then
-#     # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#     # PS1="\[\e[38;2;253;255;194m\]──➤ \[\e[0m\]\[\e[1m\]\W\[\e[0m\] "
-#     # PS1="\[\e[38;2;46;204;113m\]  ❱ \[\e[0m\]\[\e[38;2;52;152;219m\]\[\e[1m\]❲\W❳\[\e[0m\] "
-#     PS1="${debian_chroot:+($debian_chroot)}\[\e[38;2;46;204;113m\]  ❱ \[\e[0m\]\[\e[38;2;52;152;219m\]\[\e[1m\]❲\W❳\[\e[0m\] "
-# else
-#     # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-# # PS1="\[\e[38;2;253;255;194m\]──➤ \[\e[0m\]\[\e[1m\]\W\[\e[0m\] "
-#     PS1="\[\e[38;2;46;204;113m\]  ❱ \[\e[0m\]\[\e[38;2;52;152;219m\]\[\e[1m\]❲\W❳\[\e[0m\] "
-# fi
-
-# PS1="${debian_chroot:+($debian_chroot)}\[\e[38;2;46;204;113m\]  ❱ \[\e[0m\]\[\e[38;2;52;152;219m\]\[\e[1m\]❲\W❳\[\e[0m\] "
-
-# PS1="${ubuntu_logo}${blue}${darkgrey}${reset}${blue} \w${reset}${reset}${blue_fg}${reset} \n\n${neon_green}  ❱ ${reset}${bright_glue}${bold}❲\W❳${reset} "
-
-# PS1="${lower_bend}─${ubuntu_logo}${blue}${darkgrey}${reset}${blue} \w${reset}${reset}${blue_fg}${triangle}${reset}\n${upper_bend}──❱ ➤ ${neon_green}  ❱ ${reset}${bright_glue}${bold}❲\W❳${reset} "
-
-# Colors
-# blue="\[\e[30;48;5;153m\]"              # Foreground: #000000, Background: #D1E9F6
-# yellow="\[\e[30;48;5;230m\]"            # Foreground: #000000, Background: #F6EACB
-# pink="\[\e[30;48;5;224m\]"              # Foreground: #000000, Background: #F1D3CE
-# dark_blue_bg="\[\e[30;48;5;23m\]"       # Foreground: #000000, Background: #1E3A5F
-# darkgrey="\[\e[38;5;59m\]"              # Foreground: #343131
-# dark_gray_bg="\[\e[38;5;15;48;5;59m\]"  # Foreground: #FFFFFF, Background: #343131
-# white_fg="\[\e[38;5;15m\]"              # Foreground: #FFFFFF
-# orange_bg="\[\e[30;48;5;202m\]"         # Foreground: #000000, Background: #E85C0D
-# blue_fg="\[\e[38;5;153m\]"              # Foreground: #D1E9F6
-# blue_bg="\[\e[48;5;153m\]"              # Foreground: #D1E9F6
-# neon_green="\[\e[38;2;46;204;113m\]"    # Foreground: #2ECC71
-# bright_blue="\[\e[38;2;52;152;219m\]"   # Foreground: #3498DB
-# bright_blue_bg="\[\e[48;2;52;152;219m\]" # Foreground: #000000, Background: #3498DB
-
-# light_blue="\[\e[30;48;5;153m\]"              # Foreground: #D1E9F6
-# black="\[\e[30m\]"                            # Foreground: #000000
-
-# orange_bg="\[\e[48;2;232;92;13m\]"              # Background: #E85C0D
-# orange="\[\e[38;2;232;92;13m\]"              # Foreground: #E85C0D
-# dark_purple="\[\e[38;2;27;32;72m\]"
-# dark_purple_bg="\[\e[48;2;27;32;72m\]"
-# orange_fg="\[\e[38;2;250;143;71m\]"  # Foreground: #FA8F47
-# orange_bg="\[\e[48;2;250;143;71m\]"  # Foreground: #FA8F47
-
-
-
-# reset="\[\e[0m\]"                       # Reset to default colors
-
-# bold="\[\e[1m\]"
-# dim="\[\e[2m\]"
-# italic="\[\e[3m\]"
-
-
-# folder=
-# ubuntu=
-# triangle=$'\uE0B0'
-
-# lower_bend=$'\u256d'
-# upper_bend=$'\u2570'
-
-
-# ubuntu_logo="${bright_blue}${reset}${bright_blue_bg}${black}${ubuntu} ${reset}"
-
-# PS1=""
-
-# # First line
-# PS1+="${bright_blue}${lower_bend}─${reset}"
-# PS1+="${ubuntu_logo}"                        
-# PS1+="${bright_blue}${orange_bg}${reset}"           
-# PS1+="${orange_bg}${white_fg}${italic} \w${reset}"                   
-# PS1+="${orange_fg}${reset}"        
-
-# # New line
-# PS1+="\n"
-
-# # Second line
-# PS1+="${neon_green}${upper_bend}─❱ ${reset}"                      
-# PS1+="${bright_blue}❲\W❳${reset} "   
-
-# function parse_git_branch {
-#     if git rev-parse --is-inside-work-tree &>/dev/null; then
-#         git_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
-#         git_repo=$(basename `git rev-parse --show-toplevel` 2>/dev/null)
-#         if [ -n "$git_branch" ]; then
-#             echo " [$git_repo:$git_branch]"
-#         fi
-#     fi
-# }
 
 # source ~/bash_prompt.sh
 source ~/dotfiles/bash_prompts/simple.sh
