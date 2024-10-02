@@ -9,8 +9,12 @@ INTERFACE="wlp0s20f3"
 # bg_color="#3a644c"  # Default background color
 # fg_color="#0f1314"  # Default foreground color
 
-bg_color="#BFB699"  # Default background color
-fg_color="#0f1314"  # Default foreground color
+# bg_color="#BFB699"  # Default background color
+# fg_color="#0f1314"  # Default foreground color
+
+
+bg_color="#23283B"  # Default background color
+fg_color="#F7758D"  # Default foreground color
 
 # Get the signal strength
 SIGNAL=$(iw dev $INTERFACE link | grep signal | awk '{print $2}')
